@@ -43,6 +43,7 @@
 		background-color: rgba( 127, 255, 255, 0.75 ) 
 	}
 	/*end*/
+	
 	/*元素样式start*/
 	.element {
 		width: 120px;
@@ -352,8 +353,8 @@
 
 			for ( ; i < len; i += 5 ) {
 
-				const element      			  = document.createElement('div');
-				element.className 			  = 'element';
+				const element      	      = document.createElement('div');
+				element.className 	      = 'element';
 				element.style.backgroundColor = `rgba( 0, 127, 127, ${ Math.random() * 0.5 + 0.25 } )`;
 			
 
@@ -375,7 +376,7 @@
 				element.appendChild( detail );
 
 
-				const object 		= new THREE.CSS3DObject( element );
+				const object 	    = new THREE.CSS3DObject( element );
 				object.position.x   = Math.random() * 4000 - 2000;
 				object.position.y   = Math.random() * 4000 - 2000;
 				object.position.z   = Math.random() * 4000 - 2000;
