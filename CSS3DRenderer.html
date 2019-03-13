@@ -124,15 +124,15 @@
     	 * @element 五个一组 [ symbol detail1 detail2 columnInfo colInfo ]
     	 * 
     	 * [ scene camera renderer ] the three basic component of three.js
-		 * [ controls trackballControls obj ]
-		 * 
-		 * [objects save CSS3D domElem]
-		 * @type {Array}
-		 *
-		 * 
-		 * [targets save the four kinds vertices]
-		 * @type {Object}
-		 * [ table sphere helix grid ] transform CSS3D elem'position to one os these for animation
+	 * [ controls trackballControls obj ]
+	 * 
+	 * [objects save CSS3D domElem]
+	 * @type {Array}
+	 *
+	 * 
+	 * [targets save the four kinds vertices]
+	 * @type {Object}
+	 * [ table sphere helix grid ] transform CSS3D elem'position to one of these for animation
     	 */
     	
     	const table   = [
@@ -334,7 +334,7 @@
 			 * [number order]
 			 * @type {[int]}
 			 *
-			 * [symbol example H element]
+			 * [symbol example: H element]
 			 * @type {[string]}
 			 *
 			 * [detail fullname && quality]
@@ -342,7 +342,7 @@
 			 *
 			 *[object transform domElem to CSS3D object]
 			 * @type {THREE}
-			 * @position vector3( value1, value2, value3 ) [value -2000 ~ 2000]
+			 * @position vector3( value1, value2, value3 ) [value: -2000 ~ 2000]
 			 *
 			 *
 			 * 
@@ -557,8 +557,8 @@
 				TWEEN.removeAll();
 
 				const sphereGeom = new THREE.SphereGeometry( 800, 12, 11 );
-				const vertices = sphereGeom.vertices;
-				const vector = new THREE.Vector3();
+				const vertices   = sphereGeom.vertices;
+				const vector     = new THREE.Vector3();
 
 				for ( let i = 0; i < objLength; ++i ) {
 
@@ -596,8 +596,8 @@
 				TWEEN.removeAll();
 
 				const planeGeom = new THREE.PlaneGeometry( 1400, 1800, 10, 10 );
-				const vertices = planeGeom.vertices;
-				const vector = new THREE.Vector3();
+				const vertices  = planeGeom.vertices;
+				const vector    = new THREE.Vector3();
 
 				for ( let i = 0; i < objLength; ++i ) {
 
